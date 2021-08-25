@@ -19,7 +19,7 @@ function collect_ratings(){
 }
 console.log(collect_ratings());
 
-addEventListener('change', function(){
+document.addEventListener('change', function(){
     const ratings = collect_ratings()
 
     document.querySelector('#average').value = ratings.average.toFixed(2)
